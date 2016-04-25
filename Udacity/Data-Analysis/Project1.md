@@ -10,3 +10,7 @@ Prepare for this project with: Statistics.
   - How to set up a hypothesis test, make inferences from a sample, and draw conclusions based on the results
 - Why is this Important to my Career?
   - Using statistics to draw valid conclusions about data is an important part of a Data Analyst's work. A strong grasp of statistics will also be necessary in the rest of the Nanodegree program.
+
+## Resource  
+- https://en.wikipedia.org/wiki/Stroop_effect
+- https://docs.google.com/document/d/1-OkpZLjG_kX9J6LIQ5IltsqMzVWjh36QpnP2RYpVdPU/pub?embedded=True
