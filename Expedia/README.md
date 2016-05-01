@@ -27,3 +27,8 @@
 |is_booking|	1 if a booking, 0 if a click	|tinyint|
 |cnt|	Numer of similar events in the context of the same user session	|bigint|
 |hotel_cluster|	ID of a hotel cluster	|int|
+
+* destination.csv
+|Column name|	Description|	Data type|
+|srch_destination_id|	ID of the destination where the hotel search was performed|	int|
+|d1-d149|	latent description of search regions	|double|
