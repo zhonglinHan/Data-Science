@@ -3,9 +3,9 @@
 | date_time     | Timestamp     | string	|
 | site_name		| ID of the Expedia point of sale (i.e. Expedia.com, Expedia.co.uk, Expedia.co.jp, ...)	|int|
 |posa_continent|	ID of continent associated with site_name |	int|
-|user_location_country|	The ID of the country the customer is located	int|
-|user_location_region|	The ID of the region the customer is located	int|
-|user_location_city|	The ID of the city the customer is located	int|
+|user_location_country|	The ID of the country the customer is located	|int|
+|user_location_region|	The ID of the region the customer is located	|int|
+|user_location_city|	The ID of the city the customer is located	|int|
 |orig_destination_distance|	Physical distance between a hotel and a customer at the time of search. A null means the distance could not be calculated	|double|
 |user_id|	ID of user|	int|
 |is_mobile|	1 when a user connected from a mobile device, 0 otherwise	|tinyint|
