@@ -1,5 +1,5 @@
 ## Data information
-* train/test.csv *
+* train/test.csv 
 
 | Column name   | Description   | Data type |
 | ------------- |:-------------:| ---------:|
