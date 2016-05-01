@@ -1,6 +1,6 @@
 ## Data information
-- train/test.csv
-- 
+* train/test.csv *
+
 | Column name   | Description   | Data type |
 | ------------- |:-------------:| ---------:|
 | date_time     | Timestamp     | string	|
