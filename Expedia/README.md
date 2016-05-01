@@ -29,6 +29,8 @@
 |hotel_cluster|	ID of a hotel cluster	|int|
 
 * destination.csv
+
 |Column name|	Description|	Data type|
+| ------------- |:-------------:| ---------:|
 |srch_destination_id|	ID of the destination where the hotel search was performed|	int|
 |d1-d149|	latent description of search regions	|double|
