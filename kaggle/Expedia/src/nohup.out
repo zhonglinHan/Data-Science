@@ -1,0 +1,39 @@
+[W 21:06:24.829 NotebookApp] 
+        webapp_settings is deprecated, use tornado_settings.
+    
+[I 21:06:25.175 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 21:06:51.201 NotebookApp] Serving notebooks from local directory: /home/ubuntu/kaggle/Expedia/src
+[I 21:06:51.201 NotebookApp] 0 active kernels 
+[I 21:06:51.201 NotebookApp] The Jupyter Notebook is running at: https://[all ip addresses on your system]:8888/ipython/
+[I 21:06:51.202 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 21:06:56.113 NotebookApp] 302 GET /ipython (204.13.59.70) 0.64ms
+[I 21:06:56.145 NotebookApp] 302 GET /ipython/tree (204.13.59.70) 0.74ms
+[I 21:11:51.329 NotebookApp] 302 POST /ipython/login?next=%2Fipython%2Ftree (204.13.59.70) 0.83ms
+[I 21:11:58.211 NotebookApp] Creating new notebook in 
+[I 21:12:04.023 NotebookApp] Kernel started: d615bdf1-6356-4a45-bdc9-c7ee20515f95
+[I 21:14:03.577 NotebookApp] Saving file at /evaluation.ipynb
+[I 21:16:03.753 NotebookApp] Saving file at /evaluation.ipynb
+[W 21:32:35.679 NotebookApp] WebSocket ping timeout after 119970 ms.
+[C 21:41:32.479 NotebookApp] received signal 15, stopping
+[I 21:41:32.480 NotebookApp] Shutting down kernels
+[I 21:41:32.783 NotebookApp] Kernel shutdown: d615bdf1-6356-4a45-bdc9-c7ee20515f95
+[W 22:08:39.944 NotebookApp] 
+        webapp_settings is deprecated, use tornado_settings.
+    
+[I 22:08:40.321 NotebookApp] Writing notebook server cookie secret to /run/user/1000/jupyter/notebook_cookie_secret
+[I 22:09:01.736 NotebookApp] Serving notebooks from local directory: /home/ubuntu/kaggle/Expedia/src
+[I 22:09:01.736 NotebookApp] 0 active kernels 
+[I 22:09:01.736 NotebookApp] The Jupyter Notebook is running at: https://[all ip addresses on your system]:8888/ipython/
+[I 22:09:01.736 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 22:09:06.819 NotebookApp] 302 GET /ipython (204.13.59.70) 0.80ms
+[I 22:09:06.855 NotebookApp] 302 GET /ipython/tree (204.13.59.70) 0.77ms
+[I 22:09:13.918 NotebookApp] 302 POST /ipython/login?next=%2Fipython%2Ftree (204.13.59.70) 0.87ms
+[I 22:09:21.141 NotebookApp] Kernel started: 233a2914-e1a8-41ea-9998-134241d5cf2b
+[I 22:11:20.843 NotebookApp] Saving file at /evaluation.ipynb
+[I 22:33:21.116 NotebookApp] Saving file at /evaluation.ipynb
+[I 22:35:20.783 NotebookApp] Saving file at /evaluation.ipynb
+[I 22:37:20.787 NotebookApp] Saving file at /evaluation.ipynb
+[I 22:39:20.788 NotebookApp] Saving file at /evaluation.ipynb
+[C 22:41:36.102 NotebookApp] received signal 15, stopping
+[I 22:41:36.102 NotebookApp] Shutting down kernels
+[I 22:41:36.506 NotebookApp] Kernel shutdown: 233a2914-e1a8-41ea-9998-134241d5cf2b
