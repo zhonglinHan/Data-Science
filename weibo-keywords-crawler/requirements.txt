@@ -1,7 +1,0 @@
-BeautifulSoup4
-requests
-weibo
-pymongo
-selenium
-html5lib
-Pillow
