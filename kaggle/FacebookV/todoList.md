@@ -1,0 +1,11 @@
+######## ideas
+- cross validation
+  - rewrite the best submission code
+  - split the code into different .py
+- feature engineering
+  - onehot encodeing
+  - feature design
+- multimodel predictions as layers
+  - predicted and cv tuning by knn, xgb, random forest, decision tree, 
+  - predictions scores as features 
+  - ensemble with models
