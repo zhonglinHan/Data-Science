@@ -35,8 +35,8 @@ df_train = df_train.append(add_data)
 df_train = df_train.append(add_data2)
 del add_data,add_data2
 
-df_train['weekday'] = (df_train['weekday']%7+1)*3.0
-df_train['month'] = (df_train['month']%12+1)*2.0
+df_train['weekday'] = (df_train['weekday']%7+1)*3.1
+df_train['month'] = (df_train['month']%12+1)*2.1
 df_train['accuracy'] = np.log10(df_train['accuracy'])*10.0
 
 minute = df_test['time']%60
@@ -46,8 +46,8 @@ df_test['weekday'] = df_test['hour']//24
 df_test['month'] = df_test['weekday']//30
 df_test['year'] = (df_test['weekday']//365+1)*10.0
 df_test['hour'] = ((df_test['hour']%24+1)+minute/60.0)*4.0
-df_test['weekday'] = (df_test['weekday']%7+1)*3.0
-df_test['month'] = (df_test['month']%12+1)*2.0
+df_test['weekday'] = (df_test['weekday']%7+1)*3.1
+df_test['month'] = (df_test['month']%12+1)*2.1
 df_test['accuracy'] = np.log10(df_test['accuracy'])*10.0
 
 print('Generating wrong models. They are just useful to get this job :) ... done')
@@ -138,7 +138,7 @@ def generate_sub(preds):
     
     #Writting to csv
     ds_sub.name = 'place_id'
-    ds_sub.to_csv('submission_sample.csv', index=True, header=True, index_label='row_id')
+    ds_sub.to_csv('submission_v01.csv', index=True, header=True, index_label='row_id')
 
 preds=process_grid(df_train, df_test)
 
