@@ -15,3 +15,5 @@
 - 200, 400 : 0.637138170419
 
 #### random forest
+|n_estimator |max_depth    | cv            |
+|30          | none        |0.628195631673 |
