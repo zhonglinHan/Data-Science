@@ -4,12 +4,7 @@ import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier
-
-from keras.models import Sequential
-from keras.layers.core import Dense, Dropout, Activation
-from keras.layers.normalization import BatchNormalization
-from keras.layers.advanced_activations import PReLU
-from keras.utils import np_utils, generic_utils
+from nolearn.dbn import DBN
 
 def calculate_distance(distances):
     return distances ** -2
