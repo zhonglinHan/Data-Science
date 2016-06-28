@@ -83,44 +83,7 @@ def process_grid(df_train, df_test):
             preds[row_ids] = pred_labels
     
     return preds
-
-
-def process_one_cell(df_cell_train, df_cell_test):
-    #Working on df_train
-    place_counts = df_cell_train.place_id.value_counts()
-    mask = (place_counts[df_cell_train.place_id.values] >= 8).values
-    df_cell_train = df_cell_train.loc[mask]
-    
-    #Working on df_test
-    row_ids = df_cell_test.index
-    
-    #Feature engineering on x and y
-    df_cell_train.loc[:,'x'] *= 325.0
-    df_cell_train.loc[:,'y'] *= 650.0
-    df_cell_test.loc[:,'x'] *= 325.0
-    df_cell_test.loc[:,'y'] *= 650.0
-    
-    #Preparing data
-    le = LabelEncoder()
-    y = le.fit_transform(df_cell_train.place_id.values)
-    best_k=np.floor(np.sqrt(y.size)/5.1282)
-    X = df_cell_train.drop(['place_id'], axis=1).values
-    X_test = df_cell_test.values
-    
-    model = Sequential()
-    ## input layer
-    first = True
-    hidden_layers = param['hidden_layers']
-    
-    #Applying the classifier
-    clf = KNeighborsClassifier(n_neighbors=best_k.astype(int), weights=calculate_distance,metric='manhattan',n_jobs=2)
-    clf.fit(X, y)
-    y_pred = clf.predict_proba(X_test)
-    pred_labels = le.inverse_transform(np.argsort(y_pred, axis=1)[:,::-1][:,:3]) 
-    
-    return pred_labels, row_ids
-
-def process_one_cell_randomForest(df_cell_train, df_cell_test):
+def process_one_cell_dbn(df_cell_train, df_cell_test):
     
     #Working on df_train
     place_counts = df_cell_train.place_id.value_counts()
@@ -139,16 +102,15 @@ def process_one_cell_randomForest(df_cell_train, df_cell_test):
     #Preparing data
     le = LabelEncoder()
     y = le.fit_transform(df_cell_train.place_id.values)
-    best_k=np.floor(np.sqrt(y.size)/5.1282)
+    #best_k=np.floor(np.sqrt(y.size)/5.1282)
     X = df_cell_train.drop(['place_id'], axis=1).values
     X_test = df_cell_test.values
 
     #Applying the classifier
-    clf = RandomForestClassifier(n_estimators = 3, verbose=0)
+    clf = DBN([-1, 256, 128, 64, 32, -1], learn_rates=0.01, epochs=50)
     clf.fit(X, y)
     y_pred = clf.predict_proba(X_test)
     pred_labels = le.inverse_transform(np.argsort(y_pred, axis=1)[:,::-1][:,:3]) 
-    
     return pred_labels, row_ids
 
 def map_at_three (df, df_predictions):
@@ -202,7 +164,7 @@ def process_grid_cv(df_train, df_test):
             df_cell_test = df_col_test[(df_col_test['y'] >= y_min) & (df_col_test['y'] < y_max)]
             
             #Applying classifier to one grid cell
-            pred_labels, row_ids = process_one_cell_randomForest(df_cell_train, df_cell_test)
+            pred_labels, row_ids = process_one_cell_dbn(df_cell_train, df_cell_test)
             #pred_labels, row_ids = process_one_cell(df_cell_train, df_cell_test)
 
             #Updating predictions
