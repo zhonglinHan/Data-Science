@@ -35,3 +35,6 @@
 |------------|-------------|----------------|
 |clf = DBN([-1, 256, 128, 64, 32, -1], learn_rates=0.01, epochs=50) |       |                |
 
+###### kaggle src facebook
+- with cosY : Final score: 0.530284 Task completed in: 0:51:12.244275
+- with cosY and sinX : 
