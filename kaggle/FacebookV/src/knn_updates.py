@@ -1,3 +1,4 @@
+
 import numpy as np
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
@@ -60,7 +61,7 @@ def process_one_cell(cell_train, cell_test, fw, th, n_neighbors):
     return cell_pred
     
 def calculate_distance(distances):
-    return distances ** -2.22
+    return distances ** -2.225
     
 # Generate a dictionary of the time limits so it doesn't have to be 
 # recalculated each loop
@@ -255,17 +256,18 @@ datapath = '../input/'
 # Change val_start_day to zero to generate predictions
 val_start_day = 450 # Day at which to cut validation
 th = 5 # Threshold at which to cut places from train
-fw = [0.6, 0.32535, 0.56515, 0.2670, 25, 52, 0.51985]
+#fw = [0.6, 0.32535, 0.56515, 0.2670, 22, 52, 0.51985]
+fw = [0.61,0.32435, 0.56525, 0.2670, 22, 52, 0.51885]
 
 # Defining the size of the grid
-x_cuts = 20 # number of cuts along x 
-y_cuts = 50 # number of cuts along y
+x_cuts = 10 # number of cuts along x 
+y_cuts = 25 # number of cuts along y
 #TODO: More general solution for t_cuts. For now must be 4.
 t_cuts = 4 # number of cuts along time. 
 x_border_aug = 0.05 # expansion of x border on train 
 y_border_aug = 0.015 # expansion of y border on train
 time_aug = 2
-n_neighbors = 35
+n_neighbors = 32
 columns = ['x', 'y', 'minute_sin', 'minute_cos', 'accuracy',
            'day_of_year_sin', 'day_of_year_cos', 'weekday_sin', 
            'weekday_cos', 'year']
