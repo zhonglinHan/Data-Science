@@ -47,7 +47,7 @@ def process_one_cell(cell_train, cell_test, fw, th, n_neighbors):
     X = cell_train[:, :-1]
     
     #Applying the classifier
-    cte = 6.8
+    cte = 6.7
     n_neighbors = int((y.size ** 0.5) / cte)
     clf = KNeighborsClassifier(n_neighbors=n_neighbors,
                             weights=calculate_distance, p=1, 
