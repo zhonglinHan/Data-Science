@@ -260,7 +260,7 @@ th = 5 # Threshold at which to cut places from train
 fw = [0.61,0.32435, 0.56525, 0.2670, 22, 52, 0.51885]
 
 # Defining the size of the grid
-x_cuts = 10 # number of cuts along x 
+x_cuts = 9 # number of cuts along x 
 y_cuts = 25 # number of cuts along y
 #TODO: More general solution for t_cuts. For now must be 4.
 t_cuts = 4 # number of cuts along time. 
