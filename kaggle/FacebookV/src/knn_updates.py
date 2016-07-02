@@ -257,7 +257,7 @@ datapath = '../input/'
 val_start_day = 450 # Day at which to cut validation
 th = 5 # Threshold at which to cut places from train
 #fw = [0.6, 0.32535, 0.56515, 0.2670, 22, 52, 0.51985]
-fw = [1.08,0.32235, 0.56535, 0.2670, 22, 52, 0.51685]
+fw = [1.00,0.32235, 0.56535, 0.2670, 22, 52, 0.51685]
 
 # Defining the size of the grid
 x_cuts = 9 # number of cuts along x 
