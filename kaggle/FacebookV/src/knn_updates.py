@@ -61,7 +61,7 @@ def process_one_cell(cell_train, cell_test, fw, th, n_neighbors):
     return cell_pred
     
 def calculate_distance(distances):
-    return distances ** -2.225
+    return distances ** -2.21
     
 # Generate a dictionary of the time limits so it doesn't have to be 
 # recalculated each loop
