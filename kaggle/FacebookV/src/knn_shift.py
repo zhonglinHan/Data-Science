@@ -109,7 +109,7 @@ def process_grid(train, test, x_cuts, y_cuts, t_cuts, x_border_aug, y_border_aug
     y_slice = train[:, 1].max() / y_cuts
     x_boundary = [0, train[:, 0].max()]
     y_boundary = [0, train[:, 1].max()]
-    x_shift_ratio = 0.1
+    x_shift_ratio = 0.0
     y_shift_ratio = 1.0/3.0
     time_max = train[:, 2].max()
     time_factor = time_max / 2
