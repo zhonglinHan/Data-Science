@@ -1,4 +1,3 @@
-
 import numpy as np
 import pandas as pd
 from sklearn.neighbors import KNeighborsClassifier
@@ -11,10 +10,8 @@ def mapkprecision(truthvalues, predictions):
     '''
     This is a faster implementation of MAP@k valid for numpy arrays.
     It is only valid when there is one single truth value. 
-
     m ~ number of observations
     k ~ MAP at k -- in this case k should equal 3
-
     truthvalues.shape = (m,) 
     predictions.shape = (m, k)
     '''
@@ -266,7 +263,7 @@ y_cuts = 25 # number of cuts along y
 t_cuts = 4 # number of cuts along time. 
 x_border_aug = 0.05 # expansion of x border on train 
 y_border_aug = 0.015 # expansion of y border on train
-time_aug = 2
+time_aug = 3
 n_neighbors = 32
 columns = ['x', 'y', 'minute_sin', 'minute_cos', 'accuracy',
            'day_of_year_sin', 'day_of_year_cos', 'weekday_sin', 
