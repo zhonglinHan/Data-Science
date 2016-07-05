@@ -263,7 +263,7 @@ y_cuts = 25 # number of cuts along y
 t_cuts = 4 # number of cuts along time. 
 x_border_aug = 0.05 # expansion of x border on train 
 y_border_aug = 0.015 # expansion of y border on train
-time_aug = 3
+time_aug = 4
 n_neighbors = 32
 columns = ['x', 'y', 'minute_sin', 'minute_cos', 'accuracy',
            'day_of_year_sin', 'day_of_year_cos', 'weekday_sin', 
