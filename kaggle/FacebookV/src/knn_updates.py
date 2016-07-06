@@ -262,7 +262,7 @@ y_cuts = 29 # number of cuts along y
 #TODO: More general solution for t_cuts. For now must be 4.
 t_cuts = 4 # number of cuts along time. 
 x_border_aug = 0.165 # expansion of x border on train 
-y_border_aug = 0.055 # expansion of y border on train
+y_border_aug = 0.075 # expansion of y border on train
 time_aug = 4
 n_neighbors = 32
 columns = ['x', 'y', 'minute_sin', 'minute_cos', 'accuracy',
