@@ -1,7 +1,0 @@
-*********************KDD2015 feature extractors by Zhonglin******************
-
-code name       output features
-extractor_v0    enrollment_id,ndate,problem,video,access,wiki,discussion,navigate,page_close,label
-extractor_v1    enrollment_id,ndate,problem,npobj,video,nvobj,access,naobj,wiki,nwobj,discussion,ndobj,navigate,nnobj,page_close,ncobj,label
-extractor_v2    enrollment_id,date_duration,label 
-extractor_v3    enrollment_id,ndate,study_days 

@@ -225,10 +225,9 @@ cat("XGBoost\n")
 
 set.seed(5555)
 m2 <- xgb.train(data = dtrain, 
-                param, nrounds = 540,
+                param, nrounds = 700,
                 watchlist = list(train = dtrain),
                 print_every_n = 10)
-
 
 cat(Sys.time())
 cat("Predicting on test data\n")
