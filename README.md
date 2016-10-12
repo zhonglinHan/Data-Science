@@ -1,4 +1,4 @@
-# Data-Science
+# Data-Science (notes and projects)
 
 - [random forest reading](http://www.dabi.temple.edu/~hbling/8590.002/Montillo_RandomForests_4-2-2009.pdf)
 - [spark architecture](http://0x0fff.com/category/spark/)
