@@ -1,5 +1,7 @@
 # Data-Science (notes and projects)
-
+- neural network readings:
+  - [link1](http://www.robots.ox.ac.uk/~vgg/practicals/cnn/#vgg-convolutional-neural-networks-practical)
+  - [link2](http://www.asimovinstitute.org/neural-network-zoo/)
 - [random forest reading](http://www.dabi.temple.edu/~hbling/8590.002/Montillo_RandomForests_4-2-2009.pdf)
 - [spark architecture](http://0x0fff.com/category/spark/)
 - twitter spark streaming [sentiment analysis of twitter hashtags](https://developer.ibm.com/clouddataservices/sentiment-analysis-of-twitter-hashtags/ )
